@@ -1,29 +1,22 @@
-"use strict"
-
+"use strict";
 
 const body = document.body;
 
-
 function updateBackground() {
-const width = window.innerWidth;
-    if (width < 640){
-        body.style.background = "purple";
-    }
-    else if (width < 760){
-        body.style.background = "yellow";
-    }
-    else if (width < 900){
-        body.style.background = "blue"; 
-    }
-    else if (width < 1100){
-        body.style.background = "red"; 
-    }
-     else if (width < 1300){
-        body.style.background = "green"; 
-    }
-    else {
-        body.style.background = "lightgray"; 
-    }
+  const width = window.innerWidth;
+  if (width < 640) {
+    body.style.background = "purple";
+  } else if (width < 480) {
+    body.style.background = "black";
+  } else if (width < 740) {
+    body.style.background = "azure";
+  } else if (width < 1024) {
+    body.style.background = "red";
+  } else if (width < 1200) {
+    body.style.background = "beige";
+  } else {
+    body.style.background = "pink";
+  }
 }
 // Kør ved load
 updateBackground();
